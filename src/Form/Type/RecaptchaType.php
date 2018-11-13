@@ -136,7 +136,7 @@ class RecaptchaType extends AbstractType
      */
     public function getBlockPrefix(): string
     {
-        return 'kode_cms_kode_captcha_recaptcha';
+        return 'vairogs_utils_captcha_recaptcha';
     }
 
     /**
