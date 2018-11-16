@@ -10,7 +10,7 @@ use Vairogs\Utils\VairogsBundle;
 
 class CaptchaPass implements CompilerPassInterface
 {
-    public const NAME = \VAIROGS.'.'.VairogsBundle::ALIAS.'.'.Definable::CAPTCHA;
+    public const NAME = VairogsBundle::FULL_ALIAS.'.'.Definable::CAPTCHA;
 
     /**
      * {@inheritdoc}
