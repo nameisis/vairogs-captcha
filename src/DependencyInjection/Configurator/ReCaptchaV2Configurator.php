@@ -11,7 +11,7 @@ use Vairogs\Utils\Captcha\Router\LocaleResolver;
 use Vairogs\Utils\Captcha\Validator\Constraint\IsTrueValidator;
 use Vairogs\Utils\DependencyInjection\Component\Extendable;
 
-class ReCaptchaConfigurator implements Extendable
+class ReCaptchaV2Configurator implements Extendable
 {
     public function buildClientConfiguration(ArrayNodeDefinition $node): void
     {

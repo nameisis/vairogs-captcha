@@ -7,7 +7,7 @@ use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 use Symfony\Component\Config\Definition\Processor;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Vairogs\Utils\Captcha\DependencyInjection\Configurator\ReCaptchaConfigurator;
+use Vairogs\Utils\Captcha\DependencyInjection\Configurator\ReCaptchaV2Configurator;
 use Vairogs\Utils\DependencyInjection\Component\Configurable;
 use Vairogs\Utils\DependencyInjection\Component\Definable;
 use Vairogs\Utils\DependencyInjection\Component\Extendable;
@@ -15,7 +15,7 @@ use Vairogs\Utils\DependencyInjection\Component\Extendable;
 class CaptchaConfiguration implements Configurable, Extendable
 {
     public const SUPPORTED = [
-        'recaptcha_v2' => ReCaptchaConfigurator::class,
+        'recaptcha_v2' => ReCaptchaV2Configurator::class,
     ];
 
     public $configurators = [];
